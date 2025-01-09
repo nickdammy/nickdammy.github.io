@@ -8,13 +8,13 @@ function NavbarFun() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-dark">
       <Container>
-        <Navbar.Brand href="/homepage" style={{color: "white"}}>OA</Navbar.Brand>
+        <Navbar.Brand href="/" style={{color: "white"}}>OA</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{backgroundColor: "white"}}/>
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="ms-auto">
             
-            <Nav.Link href="/homepage/#/about" style={{color: "white"}}>About Me</Nav.Link>
-            <Nav.Link href="/homepage/#/experience" style={{color: "white"}}>Experiences</Nav.Link>
+            <Nav.Link href="/#/about" style={{color: "white"}}>About Me</Nav.Link>
+            <Nav.Link href="/#/experience" style={{color: "white"}}>Experiences</Nav.Link>
             {/* <NavDropdown title="Experiences" id="collasible-nav-dropdown" style={{color: "white"}}>
               <NavDropdown.Item href="#action/3.1">Work</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Education</NavDropdown.Item>

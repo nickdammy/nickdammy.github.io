@@ -1,17 +1,14 @@
 import React from 'react'
 //import {Link} from 'react-router-dom'
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div>
         <footer className="footer mt-auto py-3" style={{ backgroundColor: 'lightgray', textAlign: 'center' }}>
           <div>
             <div className="container">
-              <span>© 2024 Oluwadamilola Ajayi</span>
+              <span>© {currentYear} Oluwadamilola Ajayi</span>
             </div>
-          {/* <footer id="footer">
-              <div style="text-align: center;"> © 2024 Oluwadamilola Ajayi</div>
-        
-          </footer>  */}
         </div>
       </footer>
     </div>
