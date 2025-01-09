@@ -1,36 +1,35 @@
+// This file contains the Navbar component for the website
 
-function Navbar() {
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+function NavbarFun() {
   return (
-    <div className="Navbar">
-        <div style={{opacity: "1", top: "0px"}}>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" style={{paddingLeft: "40px"}}>
-          <a class="navbar-brand" href="/Homepage" style={{color:"white"}}>OA</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <Navbar collapseOnSelect expand="lg" className="bg-dark">
+      <Container>
+        <Navbar.Brand href="/homepage" style={{color: "white"}}>OA</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{backgroundColor: "white"}}/>
+        <Navbar.Collapse id="responsive-navbar-nav" >
+          <Nav className="ms-auto">
             
-            <div class="collapse navbar-collapse " id="navbarSupportedContent" style={{paddingRight: "100px"}}>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="./about" style={{color:"white"}} >About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/damiajayi" style={{color:"white"}}>LinkedIn</a>
-              </li>
-              
-              <li class="nav-item">
-                <a style={{color:"white"}} class="nav-link disabled" href="#">Contact Me</a>
-              </li>
-            </ul>
-            </div>
-          </div>
-        </nav>
-      </div> 
-      
-    </div>
+            <Nav.Link href="/homepage/#/about" style={{color: "white"}}>About Me</Nav.Link>
+            <Nav.Link href="/homepage/#/experience" style={{color: "white"}}>Experiences</Nav.Link>
+            {/* <NavDropdown title="Experiences" id="collasible-nav-dropdown" style={{color: "white"}}>
+              <NavDropdown.Item href="#action/3.1">Work</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Education</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Volunteer</NavDropdown.Item>
+            </NavDropdown> */}
+            <Nav.Link href="https://www.linkedin.com/in/damiajayi" style={{color: "white"}}>LinkedIn</Nav.Link>
+            <Nav.Link href="https://github.com/nickdammy" style={{color: "white"}}>GitHub</Nav.Link>
+            {/* <Nav.Link href="" style={{color: "white"}}>Resume</Nav.Link>
+             */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavbarFun;
