@@ -7,7 +7,7 @@ import EonePic from "../images/eOne.png";
 
 function Experience(){
     return (
-        <div style={{padding:"15px", height: "100vh"}}>
+        <div >
             <h1 style={{textAlign:"center"}}>Experiences </h1>
             <br></br>
 

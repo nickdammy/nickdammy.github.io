@@ -4,7 +4,7 @@ function Homepage(){
     const month = currentDate.toLocaleString('default', { month: 'long' });
 
     return (
-        <div style={{padding:"15px", height: "100vh"}}>
+        <div className="mainContent">
             <h2 style={{textAlign:'center' }}>
                 <p>Welcome</p> 
                 <p>{month} {currentDate.getDate()}, {currentDate.getFullYear()} current time is {currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}.</p>
